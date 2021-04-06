@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.30ed0948.chunk.css",
-    "main.js": "/static/js/main.b6085bd7.chunk.js",
-    "main.js.map": "/static/js/main.b6085bd7.chunk.js.map",
+    "main.js": "/static/js/main.bb60fc8b.chunk.js",
+    "main.js.map": "/static/js/main.bb60fc8b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
     "static/js/2.a823f0d7.chunk.js": "/static/js/2.a823f0d7.chunk.js",
@@ -11,6 +11,7 @@
     "static/css/main.30ed0948.chunk.css.map": "/static/css/main.30ed0948.chunk.css.map",
     "static/js/2.a823f0d7.chunk.js.LICENSE.txt": "/static/js/2.a823f0d7.chunk.js.LICENSE.txt",
     "static/media/c++.2441702d.svg": "/static/media/c++.2441702d.svg",
+    "static/media/escape.ac6578b7.png": "/static/media/escape.ac6578b7.png",
     "static/media/game-controller.76af8d15.svg": "/static/media/game-controller.76af8d15.svg",
     "static/media/infoindex.5f00b7d5.png": "/static/media/infoindex.5f00b7d5.png",
     "static/media/logo.2ad3d19f.png": "/static/media/logo.2ad3d19f.png",
@@ -18,13 +19,12 @@
     "static/media/music.494e489d.png": "/static/media/music.494e489d.png",
     "static/media/pic.e20b183a.png": "/static/media/pic.e20b183a.png",
     "static/media/react.84073561.png": "/static/media/react.84073561.png",
-    "static/media/rect.02091442.png": "/static/media/rect.02091442.png",
     "static/media/vid.0261f4aa.mp4": "/static/media/vid.0261f4aa.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.06b5035f.js",
     "static/js/2.a823f0d7.chunk.js",
     "static/css/main.30ed0948.chunk.css",
-    "static/js/main.b6085bd7.chunk.js"
+    "static/js/main.bb60fc8b.chunk.js"
   ]
 }
