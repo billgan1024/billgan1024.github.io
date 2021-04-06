@@ -146,16 +146,21 @@ export default function App() {
 				<p className="fade-in-below" style={{marginBottom: "2vh"}}>Resume: </p>
 				<p className="fade-in-below" style={{marginBottom: "2vh"}}>Other Links: </p>*/
 				}
+				<p className="fade-in-below" style={{marginTop: "1vh", marginBottom: "1vh"}}>Email: billgan12345@gmail.com</p>
+				<p className="fade-in-below" style={{marginBottom: "1vh"}}>Discord: pblpbl#5115</p>
+				<p className="fade-in-below" style={{marginBottom: "1vh"}}>Resume: <a className="inline-link" rel="noreferrer" href="https://drive.google.com/uc?export=download&id=1GCr9_-m8HNTvxb8DrIcDw1lLEI8wQuFm">Download</a></p>
 				<div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 				{
 					contactSvg.map((entry, idx) => 
-					<svg onClick={() => window.open(entry[0])} className="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox={entry[1]} key={idx}>
+					<a href={entry[0]} key={idx}>
+						<svg className="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox={entry[1]}>
 						<path d={entry[2]}/>
-					</svg>
+						</svg>
+					</a>
 					)
 				}
 				</div>
-				<h3 className="fade-in-below">Direct Message</h3>
+				<h3 className="fade-in-below" style={{margin: 0}}>Direct Message</h3>
 				<Form/>
 				<hr/>
 				<p><small>&copy; 2021 Bill Gan</small></p>

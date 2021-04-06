@@ -17,6 +17,7 @@ $colour-primary-light: #33a0ba;
     transition: all 0.05s ease;
     width: 50vh;
     outline-color: gray;
+    appearance: none;
 }
 
 .form-text {
@@ -48,4 +49,11 @@ $colour-primary-light: #33a0ba;
 
 .form-btn:hover {
     background-color: $colour-primary-dark;
+}
+
+//override hover colour if button is disabled
+.form-btn:disabled {
+    opacity: 0.5;
+    background-color: $colour-primary;
+    cursor: default;
 }
