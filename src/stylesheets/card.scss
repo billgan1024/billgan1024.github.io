@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow: "hidden";
+  overflow: hidden;
 }
 
 .card-img {
@@ -16,7 +16,7 @@
   transition: all 0.06s ease;
   box-sizing: border-box;
   object-fit: contain;
-  cursor: "pointer";
+  cursor: pointer;
 }
 
 .card-img:hover {

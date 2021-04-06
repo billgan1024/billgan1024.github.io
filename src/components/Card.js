@@ -6,7 +6,7 @@ export default function Card({children, src, url}) {
     }
     return (
         <div className="fade-in card-container">
-            <img onClick={openLink} style={{cursor: "pointer"}} className="card-img" src={src}/>
+            <img onClick={openLink} className="card-img" src={src}/>
             <div className="card-desc">
                 {children}
             </div>

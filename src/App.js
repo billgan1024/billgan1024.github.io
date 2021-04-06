@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import Link from "./components/Link";
 import logo from "./assets/logo.png";
 import vid from "./assets/vid.mp4";
@@ -22,6 +22,8 @@ export default function App() {
 	const [load, setLoad] = useState(false);	
 	const [menu, setMenu] = useState(false);
 	const [width, setWidth] = useState(window.innerWidth);
+	//refs provide an easy way to access the dom element from react code
+	const fsMenuRef = useRef(null);
 
 	useEffect(() => {
 		initObserver();
@@ -38,7 +40,12 @@ export default function App() {
 	function handleResize(event) {
 		//update menus
 		setWidth(window.innerWidth);
-		if(window.innerWidth > 600 && menu) setMenu(false);
+		if(window.innerWidth > 600 && menu) {
+			setMenu(false);
+			setTimeout(() => {
+				fsMenuRef.current.classList.add("bottom");
+			}, 100);
+		}
 	}
 
 	function updateLoaded() {
@@ -51,6 +58,10 @@ export default function App() {
 	}
 	function toggleMenu() { 
 		setMenu(prev => !prev);
+		if(!menu) fsMenuRef.current.classList.remove("bottom");
+		else setTimeout(() => {
+			fsMenuRef.current.classList.add("bottom");
+		}, 100);
 	}
 
 	return (
@@ -95,7 +106,7 @@ export default function App() {
 				}
 			</nav>
 		</header>
-		<div className={menu ? "fullscreen-menu show" : "fullscreen-menu"}>
+		<div ref={fsMenuRef} className={menu ? "fullscreen-menu show" : "fullscreen-menu"}>
 			<Link keyName="about" canActivate={false} show={menu}/>
 			<Link keyName="projects" canActivate={false} show={menu}/>
 			<Link keyName="achievements" canActivate={false} show={menu}/>
@@ -134,7 +145,7 @@ export default function App() {
 					//the map function renders out things from the array since each element is returning some jsx code
 					achievements.map((a, idx) => {
 						if(a.length == 1) return <h3 key={idx} className="fade-in-below">{a[0]}</h3>;
-						else return <p key={idx} className="fade-in-below">{a[0]}: <span>{a[1]}</span> {a[2] && `(${a[2]})`}</p>;
+						else return <p style={{marginBottom: "1vh"}} key={idx} className="fade-in-below">{a[0]}: <span>{a[1]}</span> {a[2] && `(${a[2]})`}</p>;
 					})
 				}
 		</section>
@@ -148,7 +159,7 @@ export default function App() {
 				}
 				<p className="fade-in-below" style={{marginTop: "1vh", marginBottom: "1vh"}}>Email: billgan12345@gmail.com</p>
 				<p className="fade-in-below" style={{marginBottom: "1vh"}}>Discord: pblpbl#5115</p>
-				<p className="fade-in-below" style={{marginBottom: "1vh"}}>Resume: <a className="inline-link" rel="noreferrer" href="https://drive.google.com/uc?export=download&id=1GCr9_-m8HNTvxb8DrIcDw1lLEI8wQuFm">Download</a></p>
+				<p className="fade-in-below" style={{marginBottom: "1vh"}}>Resume: <a className="inline-link" rel="noreferrer" href="https://drive.google.com/uc?export=download&id=1GCr9_-m8HNTvxb8DrIcDw1lLEI8wQuFm" download>Download</a></p>
 				<div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 				{
 					contactSvg.map((entry, idx) => 
