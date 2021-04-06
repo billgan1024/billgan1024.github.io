@@ -1,0 +1,61 @@
+$header-height: 50px;
+$colour-primary: #0088a9;
+
+html {
+	scroll-behavior: smooth;
+}
+section {
+	scroll-margin-top: $header-height;
+	padding: 2vh 2vh 3vh 2vh;
+	box-sizing: border-box;
+	text-align: center;
+}
+body {
+	font-size: 2.8vh;  
+	color: white;
+	margin: 0;
+}
+
+.background-vid {
+	height: 100vh;
+  	width: 100vw;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	position: fixed;
+	z-index: -1;
+	filter: brightness(50%);
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Titillium Web", sans-serif;
+	margin: 1vh 0vh 0vh 0vh;
+}
+
+p {
+	margin-bottom: 0px;	
+	margin-top: .08vh;
+	font-family: "Montserrat", sans-serif;
+}
+
+span {
+	color: $colour-primary;
+}
+
+.inline-link {
+	color: $colour-primary;
+	text-decoration: none;
+}
+
+.icon-link {
+	transition: all 0.1s ease;
+}
+
+.icon-link:hover {
+	color: $colour-primary;
+}
+
+input, label {
+	font-family: "Montserrat", sans-serif;
+}
