@@ -27,6 +27,7 @@ export default function App() {
 
 	useEffect(() => {
 		initObserver();
+		fsMenuRef.current.classList.add("bottom");
 	}, []);
 
 	//for some reason you need to add a new event listener every time menu changes to track changes of menu
@@ -119,8 +120,7 @@ export default function App() {
 
 			<section id="about" className="g1">
 				<h2 style={{marginTop: 0}} className="subtitle-left">About Me</h2> 
-				<p className="fade-in-below">I&apos;m Bill Gan, a student at Milliken Mills High School. Here are some of my interests:</p>
-			
+				<p className="fade-in-below" style={{marginLeft: "30vh", marginRight: "30vh"}}>I&apos;m Bill Gan, a student at Milliken Mills High School who has been accepted to Waterloo&apos;s Computer Science program. Here are some of my interests:</p>
 				<div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-evenly"}}>
 					{
 						about.map((entry, idx) => <Bubble key={idx} src={entry[0]}><h3>{entry[1]}</h3>{entry[2]}</Bubble>)

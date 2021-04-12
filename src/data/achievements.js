@@ -3,7 +3,7 @@ const achievements = [
     //length 2 or 3: contest: score (additional comments)
     ["2021"],
     ["Canadian Computing Competition", "55/75", "Group 3 Honour Roll"],
-    ["American Mathematics Competition 12A", "100.5/150", "Aime Qualifier"],
+    ["American Mathematics Competition 12A", "100.5/150", "AIME Qualifier"],
     ["2020"],
     ["Canadian Open Mathematics Challenge", "62/80", "CMO Repêchage Qualifier"],
     ["Canadian Senior Mathematics Contest", "55/60", "Group 3 Honour Roll"],

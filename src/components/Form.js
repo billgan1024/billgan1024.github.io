@@ -26,6 +26,7 @@ export default function Form() {
         e.preventDefault();
         setLoading(true);
         try {
+            //await waits for this current promise to end, then proceeds to add data or catches the error
             await firebase.auth().createUserWithEmailAndPassword(email.current.value, "password");
             addData();
         } catch(e) { 
