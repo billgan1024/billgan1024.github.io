@@ -9,16 +9,22 @@ section {
 	padding: 2vh 2vh 3vh 2vh;
 	box-sizing: border-box;
 	text-align: center;
+	width: 100%;
 }
 body {
 	font-size: 2.8vh;  
 	color: white;
 	margin: 0;
+	position: relative;
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 .background-vid {
-	height: 100vh;
-  	width: 100vw;
+	width: 100%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	object-fit: cover;
@@ -29,14 +35,26 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Noto Sans HK", sans-serif;
+	font-weight: 400;
 	margin: 1vh 0vh 0vh 0vh;
+}
+
+strong {
+	font-family: "Noto Sans HK", sans-serif;
+	font-weight: 400;
 }
 
 p {
 	margin-bottom: 0px;	
 	margin-top: .08vh;
 	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+}
+
+.subdesc {
+	margin: auto;
+	max-width: 50ch;
 }
 
 span {
@@ -58,4 +76,5 @@ span {
 
 input, label {
 	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
 }

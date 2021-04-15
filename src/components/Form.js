@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import firebase from "../firebase";
 
 
@@ -17,7 +17,7 @@ export default function Form() {
             date: new Date().toString()
         }).then(() => {
             alert("Message sent successfully.");
-            msg.current.value = ""; 
+            msg.current.value = "";
         }).catch(e => {
             alert("Error: Could not send message.");
         });
@@ -29,23 +29,23 @@ export default function Form() {
             //await waits for this current promise to end, then proceeds to add data or catches the error
             await firebase.auth().createUserWithEmailAndPassword(email.current.value, "password");
             addData();
-        } catch(e) { 
-            if(e.code === "auth/invalid-email") {
+        } catch (e) {
+            if (e.code === "auth/invalid-email") {
                 alert("Error: Invalid email.");
             } else addData();
         } finally {
             setLoading(false);
         }
     }
-    return (    
-        <form onSubmit={handleSubmit} className="fade-in-below" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-        <label className="form-label"><small>Name:</small></label>
-        <input className="form-text" type="text" ref={name} required/>
-        <label className="form-label"><small>Email:</small></label>
-        <input className="form-text" type="email" ref={email} required/>
-        <label className="form-label"><small>Message:</small></label>
-        <textarea className="form-text form-text-area" ref={msg} required/>
-        <input disabled={loading} className="form-btn" type="submit" value="Submit"/>
+    return (
+        <form onSubmit={handleSubmit} className="fade-in-below" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <label className="form-label">Name:</label>
+            <input className="form-text" type="text" ref={name} required />
+            <label className="form-label">Email:</label>
+            <input className="form-text" type="email" ref={email} required />
+            <label className="form-label">Message:</label>
+            <textarea className="form-text form-text-area" ref={msg} required />
+            <input disabled={loading} className="form-btn" type="submit" value="Submit" />
         </form>
     );
 }
