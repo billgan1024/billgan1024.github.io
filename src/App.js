@@ -57,6 +57,7 @@ export default function App() {
 			});
 		});
 	}
+
 	function toggleMenu() {
 		setMenu(prev => !prev);
 		if (!menu) fsMenuRef.current.classList.remove("bottom");

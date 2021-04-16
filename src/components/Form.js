@@ -17,28 +17,24 @@ export default function Form() {
             date: new Date().toString()
         }).then(() => {
             alert("Message sent successfully.");
-            msg.current.value = "";
+            msg.current.value = ""; setLoading(false);
         }).catch(e => {
-            alert("Error: Could not send message.");
+            alert("Error: Could not send message."); setLoading(false);
         });
+        //note: finally does NOT run after then/catch runs. it runs instantly
     }
-    async function handleSubmit(e) {
+    function handleSubmit(e) {
         e.preventDefault();
         setLoading(true);
-        try {
-            //await waits for this current promise to end, then proceeds to add data or catches the error
-            await firebase.auth().createUserWithEmailAndPassword(email.current.value, "password");
+        firebase.auth().createUserWithEmailAndPassword(email.current.value, "password").then(userCredential => {
             addData();
-        } catch (e) {
-            if (e.code === "auth/invalid-email") {
-                alert("Error: Invalid email.");
-            } else addData();
-        } finally {
-            setLoading(false);
-        }
+        }).catch(e => {
+            if (e.code === "auth/invalid-email") { alert("Error: Invalid email."); setLoading(false); }
+            else addData();
+        });
     }
     return (
-        <form onSubmit={handleSubmit} className="fade-in-below" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <form onSubmit={e => handleSubmit(e)} className="fade-in-below" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <label className="form-label">Name:</label>
             <input className="form-text" type="text" ref={name} required />
             <label className="form-label">Email:</label>
