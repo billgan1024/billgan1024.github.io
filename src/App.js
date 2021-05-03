@@ -12,8 +12,6 @@ import pic from "./assets/pic.png";
 import contactSvg from "./data/contact";
 import Form from "./components/Form";
 
-console.log(process.env);
-
 //create a context to share the current active key with all the navbar links
 export const KeyContext = React.createContext();
 const matches = [".fade-in-below", ".fade-in", ".subtitle-left", ".subtitle-right", ".contact-icon"];
@@ -24,6 +22,7 @@ export default function App() {
 	const [load, setLoad] = useState(false);
 	const [menu, setMenu] = useState(false);
 	const [width, setWidth] = useState(window.innerWidth);
+
 	//refs provide an easy way to access the dom element from react code
 	const fsMenuRef = useRef(null);
 
@@ -67,7 +66,6 @@ export default function App() {
 			fsMenuRef.current.classList.add("bottom");
 		}, 100);
 	}
-
 	return (
 		<>
 			{

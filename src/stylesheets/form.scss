@@ -14,10 +14,19 @@ $colour-primary-light: #33a0ba;
     border-radius: 0.5vh;
     box-sizing: border-box;
     margin-bottom: 2vh;
-    transition: all 0.05s ease;
+    transition: box-shadow 0.05s ease;
     width: 50vh;
-    outline-color: gray;
     appearance: none;
+    outline: none;
+}
+
+.form-text:focus, .form-text-area:focus {
+    border: 0.3vh solid gray;
+    padding: 1vh 1.1vh;
+}
+
+.form-btn:focus {
+    border: 0.3vh solid white;
 }
 
 .form-text {
@@ -26,25 +35,29 @@ $colour-primary-light: #33a0ba;
     font-family: "Montserrat", sans-serif;
 }
 
+.form-text, .form-btn {
+    height: 6vh;
+}
+
 .form-text-area {
     height: 30vh;
     resize: none;
 }
 
-.form-text:focus {
-    box-shadow: 0 0 3pt 2pt rgba(255, 255, 255, 1);
+.form-text:focus, .form-text-area:focus {
+    box-shadow: 0 0 0.6vh 0.4vh rgba(255, 255, 255, 1);
 }
+
+.form-btn:focus {
+    box-shadow: 0 0 0.6vh 0.4vh $colour-primary-light;
+}
+
 
 .form-btn {
     background-color: $colour-primary;
     color: white;
     cursor: pointer;
     transition: all 0.1s ease;
-    outline: none;
-}
-
-.form-btn:focus{ 
-    box-shadow: 0 0 3pt 2pt $colour-primary-light;
 }
 
 .form-btn:hover {
