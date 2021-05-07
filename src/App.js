@@ -34,10 +34,10 @@ export default function App() {
 	//for some reason you need to add a new event listener every time menu changes to track changes of menu
 	useEffect(() => {
 		window.addEventListener("resize", handleResize);
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
+		window.addEventListener("keydown", handlePress);
+		window.addEventListener("mousedown", handleClick);
 	}, [menu, setMenu]);
+
 
 	function handleResize(event) {
 		//update menus
@@ -48,6 +48,17 @@ export default function App() {
 				fsMenuRef.current.classList.add("bottom");
 			}, 100);
 		}
+	}
+
+	function handlePress(e) {
+		if (e.which == 9) {
+			document.querySelector(".form-btn").classList.add("tabbed-in");
+		}
+	}
+
+	function handleClick(e) {
+		//all the mouse buttons can focus on things, so listen for any mouse button
+		document.querySelector(".form-btn").classList.remove("tabbed-in");
 	}
 
 	function updateLoaded() {

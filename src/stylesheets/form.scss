@@ -1,6 +1,6 @@
 $colour-primary: #0088a9;
 $colour-primary-dark: #007a98;
-$colour-primary-superdark: #004455;
+$colour-primary-superdark: #006d87;
 $colour-primary-light: #33a0ba;
 
 .form-label {
@@ -25,10 +25,6 @@ $colour-primary-light: #33a0ba;
     padding: 1vh 1.1vh;
 }
 
-.form-btn:focus {
-    border: 0.3vh solid white;
-}
-
 .form-text {
     background-color: rgb(249, 249, 249);
     text-align: left;
@@ -45,13 +41,16 @@ $colour-primary-light: #33a0ba;
 }
 
 .form-text:focus, .form-text-area:focus {
-    box-shadow: 0 0 0.6vh 0.4vh rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0.45vh 0.3vh rgba(255, 255, 255, 1);
 }
 
 .form-btn:focus {
-    box-shadow: 0 0 0.6vh 0.4vh $colour-primary-light;
+    box-shadow: 0 0 0.45vh 0.3vh $colour-primary-light;
 }
 
+.tabbed-in.form-btn:focus {
+    border: 0.3vh solid white;
+}
 
 .form-btn {
     background-color: $colour-primary;
@@ -62,6 +61,10 @@ $colour-primary-light: #33a0ba;
 
 .form-btn:hover {
     background-color: $colour-primary-dark;
+}
+
+.form-btn:active {
+    background-color: $colour-primary-superdark;
 }
 
 //override hover colour if button is disabled
