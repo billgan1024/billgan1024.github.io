@@ -145,8 +145,8 @@ export default function App() {
 				<div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
 					{
 						projects.map((entry, idx) =>
-							<Card key={idx} src={entry[0]} url={entry[1]}>
-								<p style={{ fontSize: "2vh", margin: "1vh" }}>{entry[2]}</p>
+							<Card key={idx} title={entry[0]} src={entry[1]} url={entry[2]}>
+								<p style={{ fontSize: "2vh", margin: "1vh" }}>{entry[3]}</p>
 							</Card>
 						)
 					}
