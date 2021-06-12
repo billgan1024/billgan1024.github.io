@@ -141,7 +141,7 @@ export default function App() {
 			</section>
 			<section id="projects" className="g2">
 				<h2 style={{ marginTop: 0 }} className="subtitle-right">Projects</h2>
-				<p className="fade-in-below" style={{ margin: "auto" }}>A list of projects I&apos;m currently working on. Click on the cards to view more!</p>
+				<p className="fade-in-below" style={{ margin: "auto" }}>A list of in-progress or completed projects. Click on the cards to view more!</p>
 				<div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
 					{
 						projects.map((entry, idx) =>
