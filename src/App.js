@@ -176,7 +176,7 @@ export default function App() {
 				<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
 					{
 						contactSvg.map((entry, idx) =>
-							<a href={entry[0]} key={idx}>
+							<a href={entry[0]} key={idx} style={{ width: "5vh", height: "5vh", margin: "2vh 3vh" }}>
 								<svg className="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox={entry[1]}>
 									<path d={entry[2]} />
 								</svg>

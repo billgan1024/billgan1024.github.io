@@ -21,10 +21,10 @@ $colour-primary: #0088a9;
 }
 
 .contact-icon {
-	width: 5vh;
 	fill: white;
-	margin: 2vh 3vh;
 	transition: all 0.1s ease;
+	width: 5vh;
+	height: 5vh;
 }
 
 .contact-icon:hover {
