@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6629c606.chunk.css",
-    "main.js": "/static/js/main.68b349b8.chunk.js",
-    "main.js.map": "/static/js/main.68b349b8.chunk.js.map",
+    "main.js": "/static/js/main.ffec7246.chunk.js",
+    "main.js.map": "/static/js/main.ffec7246.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
-    "static/js/2.dd65ded1.chunk.js": "/static/js/2.dd65ded1.chunk.js",
-    "static/js/2.dd65ded1.chunk.js.map": "/static/js/2.dd65ded1.chunk.js.map",
+    "static/js/2.96ec186d.chunk.js": "/static/js/2.96ec186d.chunk.js",
+    "static/js/2.96ec186d.chunk.js.map": "/static/js/2.96ec186d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.6629c606.chunk.css.map": "/static/css/main.6629c606.chunk.css.map",
-    "static/js/2.dd65ded1.chunk.js.LICENSE.txt": "/static/js/2.dd65ded1.chunk.js.LICENSE.txt",
+    "static/js/2.96ec186d.chunk.js.LICENSE.txt": "/static/js/2.96ec186d.chunk.js.LICENSE.txt",
     "static/media/c++.2441702d.svg": "/static/media/c++.2441702d.svg",
     "static/media/escape.ac6578b7.png": "/static/media/escape.ac6578b7.png",
     "static/media/game-controller.76af8d15.svg": "/static/media/game-controller.76af8d15.svg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.06b5035f.js",
-    "static/js/2.dd65ded1.chunk.js",
+    "static/js/2.96ec186d.chunk.js",
     "static/css/main.6629c606.chunk.css",
-    "static/js/main.68b349b8.chunk.js"
+    "static/js/main.ffec7246.chunk.js"
   ]
 }
