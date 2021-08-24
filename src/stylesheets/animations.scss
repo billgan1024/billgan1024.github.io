@@ -22,7 +22,7 @@ $colour-primary: #0088a9;
 
 .contact-icon {
 	fill: white;
-	transition: all 0.1s ease;
+	transition: fill 0.1s ease;
 	width: 5vh;
 	height: 5vh;
 }
@@ -105,7 +105,7 @@ $colour-primary: #0088a9;
 	transition: opacity 0.1s ease;
 	font-size: 20px;
 	text-align: center;
-	font-family: "Noto Sans HK", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 100;
 	z-index: 10;
 	user-select: none;

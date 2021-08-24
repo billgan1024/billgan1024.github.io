@@ -2,6 +2,7 @@ const achievements = [
     //length 1: heading
     //length 2 or 3: contest: score (additional comments)
     ["2021"],
+    ["Computer Science Early Admission Scholarship", "$15,000"],
     ["Canadian Computing Competition", "55/75", "Group 3 Honour Roll"],
     ["American Mathematics Competition 12A", "100.5/150", "AIME Qualifier"],
     ["Euclid Contest", "83/100", "School Medal Champion"],
