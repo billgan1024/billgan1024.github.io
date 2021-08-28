@@ -66,6 +66,10 @@ span {
 	text-decoration: none;
 }
 
+.inline-link:hover {
+    text-decoration: underline;
+}
+
 input, label {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
