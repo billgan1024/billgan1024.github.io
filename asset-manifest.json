@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac9e3f73.chunk.css",
-    "main.js": "/static/js/main.26d325dc.chunk.js",
-    "main.js.map": "/static/js/main.26d325dc.chunk.js.map",
+    "main.css": "/static/css/main.fbbf00de.chunk.css",
+    "main.js": "/static/js/main.2b89294d.chunk.js",
+    "main.js.map": "/static/js/main.2b89294d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
     "static/js/2.9ea81799.chunk.js": "/static/js/2.9ea81799.chunk.js",
     "static/js/2.9ea81799.chunk.js.map": "/static/js/2.9ea81799.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ac9e3f73.chunk.css.map": "/static/css/main.ac9e3f73.chunk.css.map",
+    "static/css/main.fbbf00de.chunk.css.map": "/static/css/main.fbbf00de.chunk.css.map",
     "static/js/2.9ea81799.chunk.js.LICENSE.txt": "/static/js/2.9ea81799.chunk.js.LICENSE.txt",
     "static/media/algovis.675b74f2.png": "/static/media/algovis.675b74f2.png",
     "static/media/c++.2441702d.svg": "/static/media/c++.2441702d.svg",
     "static/media/escape.ac6578b7.png": "/static/media/escape.ac6578b7.png",
     "static/media/game-controller.76af8d15.svg": "/static/media/game-controller.76af8d15.svg",
-    "static/media/infoindex.5f00b7d5.png": "/static/media/infoindex.5f00b7d5.png",
     "static/media/logo.2ad3d19f.png": "/static/media/logo.2ad3d19f.png",
     "static/media/math.cd6f2b8a.png": "/static/media/math.cd6f2b8a.png",
     "static/media/music.494e489d.png": "/static/media/music.494e489d.png",
@@ -28,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ebc510a.js",
     "static/js/2.9ea81799.chunk.js",
-    "static/css/main.ac9e3f73.chunk.css",
-    "static/js/main.26d325dc.chunk.js"
+    "static/css/main.fbbf00de.chunk.css",
+    "static/js/main.2b89294d.chunk.js"
   ]
 }
