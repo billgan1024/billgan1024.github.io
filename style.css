@@ -133,13 +133,7 @@ main {
 .primary {
   color: white;
 
-  background:
-    linear-gradient(135deg,
-      #3e62dd,
-      #536ee5);
-
-  box-shadow:
-    0 10px 35px rgba(59, 85, 200, 0.2);
+  background: linear-gradient(135deg, #3e62dd, #536ee5);
 }
 
 .secondary {
@@ -171,8 +165,6 @@ main {
   overflow: hidden;
   border-radius: 9px;
   border: 1px solid var(--border);
-  /* or any single color, e.g. #344257 */
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.4);
 }
 
 .projects-section {
@@ -220,14 +212,9 @@ main {
   border: 1px solid #273449;
   border-radius: 9px;
 
-  background:
-    linear-gradient(145deg,
-      rgba(20, 28, 42, 0.8),
-      rgba(9, 13, 21, 0.7));
+  background: linear-gradient(145deg, rgba(20, 28, 42, 0.8), rgba(9, 13, 21, 0.7));
 
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .project-card:hover {
@@ -258,9 +245,7 @@ main {
   color: #a7b6ff;
 
   background:
-    linear-gradient(135deg,
-      rgba(72, 92, 180, 0.5),
-      rgba(52, 45, 100, 0.5));
+    linear-gradient(135deg, rgba(72, 92, 180, 0.5), rgba(52, 45, 100, 0.5));
 
   border: 1px solid #576dc7;
 }
@@ -269,9 +254,7 @@ main {
   color: #67e4df;
 
   background:
-    linear-gradient(135deg,
-      rgba(38, 118, 120, 0.5),
-      rgba(35, 74, 85, 0.5));
+    linear-gradient(135deg, rgba(38, 118, 120, 0.5), rgba(35, 74, 85, 0.5));
 
   border: 1px solid #3c9291;
 }
@@ -280,9 +263,7 @@ main {
   color: #d096ff;
 
   background:
-    linear-gradient(135deg,
-      rgba(115, 67, 150, 0.5),
-      rgba(61, 40, 94, 0.5));
+    linear-gradient(135deg, rgba(115, 67, 150, 0.5), rgba(61, 40, 94, 0.5));
 
   border: 1px solid #8e62b7;
 }
@@ -343,10 +324,7 @@ main {
   bottom: 8px;
   left: 7px;
   width: 2px;
-  background: linear-gradient(to bottom,
-      var(--blue),
-      var(--purple) 60%,
-      rgba(36, 48, 68, 0.2));
+  background: linear-gradient(to bottom, var(--blue), var(--purple) 60%, rgba(36, 48, 68, 0.2));
 }
 
 .timeline-item {
@@ -381,9 +359,7 @@ main {
   padding: 24px;
   border: 1px solid #273449;
   border-radius: 9px;
-  background: linear-gradient(145deg,
-      rgba(20, 28, 42, 0.7),
-      rgba(9, 13, 21, 0.6));
+  background: linear-gradient(145deg, rgba(20, 28, 42, 0.7), rgba(9, 13, 21, 0.6));
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
