@@ -27,40 +27,6 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.background {
-  position: fixed;
-  inset: 0;
-
-  background:
-    radial-gradient(circle at 70% 10%,
-      rgba(76, 95, 180, 0.08),
-      transparent 30%),
-    radial-gradient(circle at 20% 40%,
-      rgba(80, 120, 255, 0.04),
-      transparent 35%);
-
-  pointer-events: none;
-  z-index: -1;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(8, 11, 18, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  width: 100%;
-  padding: 0 max(24px, calc((100% - var(--max-width)) / 2));
-  height: 76px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
 
 
 
@@ -518,9 +484,6 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 0 16px;
-  }
 
   main {
     width: calc(100% - 32px);
